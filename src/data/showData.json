@@ -1,0 +1,20 @@
+{
+    "shows": [
+        {
+            "title": "Singing at Worship",
+            "when": "August 29 at 10:30 am",
+            "where": {
+                "location": "The First Presbyterian Church",
+                "address": "407 Walnut St. Leavenworth, KS"
+            }
+        },
+        {
+            "title": "Holiday Dinner Show",
+            "when": "December 10",
+            "where": {
+                "location": "The Heritage Center",
+                "address": "109 Delaware Leavenworth, KS"
+            }
+        }
+    ]
+}

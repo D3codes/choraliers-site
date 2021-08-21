@@ -104,7 +104,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 27);
+/******/ 	return __webpack_require__(__webpack_require__.s = 28);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -134,7 +134,7 @@ var _utils = __webpack_require__(7);
 
 var requireById = function requireById(id) {
   if (!(0, _utils.isWebpack)() && typeof id === 'string') {
-    return __webpack_require__(34)("" + id);
+    return __webpack_require__(35)("" + id);
   }
 
   return __webpack_require__('' + id);
@@ -188,7 +188,7 @@ var _createClass = function () {
   };
 }();
 
-var _requireUniversalModule = __webpack_require__(33);
+var _requireUniversalModule = __webpack_require__(34);
 
 Object.defineProperty(exports, 'CHUNK_NAMES', {
   enumerable: true,
@@ -203,7 +203,7 @@ Object.defineProperty(exports, 'MODULE_IDS', {
   }
 });
 
-var _reportChunks = __webpack_require__(35);
+var _reportChunks = __webpack_require__(36);
 
 Object.defineProperty(exports, 'ReportChunks', {
   enumerable: true,
@@ -233,7 +233,7 @@ var _context2 = _interopRequireDefault(_context);
 
 var _utils = __webpack_require__(7);
 
-var _helpers = __webpack_require__(36);
+var _helpers = __webpack_require__(37);
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
@@ -617,7 +617,7 @@ function universal(asyncModule) {
     return UniversalComponent;
   }(_react2["default"].Component), _class.contextType = _context2["default"], _temp;
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(32)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(33)(module)))
 
 /***/ }),
 /* 4 */
@@ -980,7 +980,11 @@ var joinUs_JoinUs = function JoinUs() {
 };
 
 /* harmony default export */ var joinUs = (joinUs_JoinUs);
+// EXTERNAL MODULE: /Users/davidfreeman/Developer/choraliers-site/src/data/shows.json
+var shows = __webpack_require__(27);
+
 // CONCATENATED MODULE: /Users/davidfreeman/Developer/choraliers-site/src/components/pages/shows.js
+
 
 
 var shows_useStyles = Object(core_["makeStyles"])(function (theme) {
@@ -1003,26 +1007,20 @@ var shows_Shows = function Shows() {
     className: classes.root
   }, /*#__PURE__*/external_react_default.a.createElement("div", null, /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
     variant: "h4"
-  }, "Upcoming Appearances"), /*#__PURE__*/external_react_default.a.createElement("br", null), /*#__PURE__*/external_react_default.a.createElement("div", {
-    className: classes.infoContainer
-  }, /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
-    variant: "h4"
-  }, "Singing at Worship"), /*#__PURE__*/external_react_default.a.createElement("div", null, /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
-    variant: "h6"
-  }, "When"), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, "August 29 at 10:30 am")), /*#__PURE__*/external_react_default.a.createElement("div", null, /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
-    variant: "h6"
-  }, "Where"), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, "The First Presbyterian Church"), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, "407 Walnut St. Leavenworth, KS"))), /*#__PURE__*/external_react_default.a.createElement("br", null), /*#__PURE__*/external_react_default.a.createElement(core_["Divider"], null), /*#__PURE__*/external_react_default.a.createElement("br", null), /*#__PURE__*/external_react_default.a.createElement("div", {
-    className: classes.infoContainer
-  }, /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
-    variant: "h4"
-  }, "Holiday Dinner Show"), /*#__PURE__*/external_react_default.a.createElement("div", null, /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
-    variant: "h6"
-  }, "When"), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, "December 10")), /*#__PURE__*/external_react_default.a.createElement("div", null, /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
-    variant: "h6"
-  }, "Where"), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, "The Heritage Center"), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, "109 Delaware Leavenworth, KS"))), /*#__PURE__*/external_react_default.a.createElement("br", null), /*#__PURE__*/external_react_default.a.createElement(core_["Divider"], null), /*#__PURE__*/external_react_default.a.createElement("br", null), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, "Check back later for more info!")));
+  }, "Upcoming Appearances"), /*#__PURE__*/external_react_default.a.createElement("br", null), shows["a" /* shows */].map(function (show) {
+    return /*#__PURE__*/external_react_default.a.createElement(external_react_default.a.Fragment, null, /*#__PURE__*/external_react_default.a.createElement("div", {
+      className: classes.infoContainer
+    }, /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
+      variant: "h4"
+    }, show.title), /*#__PURE__*/external_react_default.a.createElement("div", null, /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
+      variant: "h6"
+    }, "When"), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, show.when)), /*#__PURE__*/external_react_default.a.createElement("div", null, /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
+      variant: "h6"
+    }, "Where"), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, show.where.location), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, show.where.address))), /*#__PURE__*/external_react_default.a.createElement("br", null), /*#__PURE__*/external_react_default.a.createElement(core_["Divider"], null), /*#__PURE__*/external_react_default.a.createElement("br", null));
+  }), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, "Check back later for more info!")));
 };
 
-/* harmony default export */ var shows = (shows_Shows);
+/* harmony default export */ var pages_shows = (shows_Shows);
 // CONCATENATED MODULE: /Users/davidfreeman/Developer/choraliers-site/src/components/pages/media.js
 
 
@@ -1123,7 +1121,7 @@ var App_Site = function Site() {
     className: classes.root
   }, /*#__PURE__*/external_react_default.a.createElement(Navbar, {
     onTabSelect: setPage
-  }), page === PAGES.HOME && /*#__PURE__*/external_react_default.a.createElement(home, null), page === PAGES.ABOUT && /*#__PURE__*/external_react_default.a.createElement(about, null), page === PAGES.JOIN_US && /*#__PURE__*/external_react_default.a.createElement(joinUs, null), page === PAGES.SHOWS && /*#__PURE__*/external_react_default.a.createElement(shows, null), page === PAGES.MEDIA && /*#__PURE__*/external_react_default.a.createElement(media, null), /*#__PURE__*/external_react_default.a.createElement(core_["Snackbar"], {
+  }), page === PAGES.HOME && /*#__PURE__*/external_react_default.a.createElement(home, null), page === PAGES.ABOUT && /*#__PURE__*/external_react_default.a.createElement(about, null), page === PAGES.JOIN_US && /*#__PURE__*/external_react_default.a.createElement(joinUs, null), page === PAGES.SHOWS && /*#__PURE__*/external_react_default.a.createElement(pages_shows, null), page === PAGES.MEDIA && /*#__PURE__*/external_react_default.a.createElement(media, null), /*#__PURE__*/external_react_default.a.createElement(core_["Snackbar"], {
     anchorOrigin: {
       vertical: 'bottom',
       horizontal: 'center'
@@ -1457,22 +1455,28 @@ module.exports = __webpack_require__.p + "static/choraliers2.e35fd894.jpg";
 
 /***/ }),
 /* 27 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module) {
 
-__webpack_require__(28);
-__webpack_require__(30);
-module.exports = __webpack_require__(37);
-
+module.exports = JSON.parse("{\"a\":[{\"title\":\"Singing at Worship\",\"when\":\"August 29 at 10:30 am\",\"where\":{\"location\":\"The First Presbyterian Church\",\"address\":\"407 Walnut St. Leavenworth, KS\"}},{\"title\":\"Holiday Dinner Show\",\"when\":\"December 10\",\"where\":{\"location\":\"The Heritage Center\",\"address\":\"109 Delaware Leavenworth, KS\"}}]}");
 
 /***/ }),
 /* 28 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(29);
+__webpack_require__(31);
+module.exports = __webpack_require__(38);
+
+
+/***/ }),
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 /* eslint-disable import/no-dynamic-require */
 
-var plugins = __webpack_require__(29)["default"];
+var plugins = __webpack_require__(30)["default"];
 
 var _require = __webpack_require__(9),
     registerPlugins = _require.registerPlugins;
@@ -1482,7 +1486,7 @@ registerPlugins(plugins);
 if (false) {}
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1498,7 +1502,7 @@ var plugins = [{
 /* harmony default export */ __webpack_exports__["default"] = (plugins);
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1508,7 +1512,7 @@ var plugins = [{
 var _require = __webpack_require__(9),
     registerTemplates = _require.registerTemplates;
 
-var _require2 = __webpack_require__(31),
+var _require2 = __webpack_require__(32),
     templates = _require2["default"],
     notFoundTemplate = _require2.notFoundTemplate;
 
@@ -1517,7 +1521,7 @@ registerTemplates(templates, notFoundTemplate);
 if (false) {}
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1573,7 +1577,7 @@ var notFoundTemplate = "__react_static_root__/node_modules/react-static/lib/brow
 /* WEBPACK VAR INJECTION */}.call(this, "/"))
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, exports) {
 
 module.exports = function (module) {
@@ -1602,7 +1606,7 @@ module.exports = function (module) {
 };
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1813,7 +1817,7 @@ var getConfig = function getConfig(isDynamic, universalConfig, options, props) {
 };
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -1841,10 +1845,10 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 34;
+webpackContext.id = 35;
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1954,7 +1958,7 @@ ReportChunks.propTypes = {
 exports["default"] = ReportChunks;
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2021,7 +2025,7 @@ var __handleAfter = exports.__handleAfter = function __handleAfter(props, state,
 };
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2038,9 +2042,9 @@ exports["default"] = void 0;
 
 var React = _interopRequireWildcard(__webpack_require__(0));
 
-var _useStaticInfo = __webpack_require__(38);
+var _useStaticInfo = __webpack_require__(39);
 
-var _Suspense = _interopRequireDefault(__webpack_require__(39));
+var _Suspense = _interopRequireDefault(__webpack_require__(40));
 /* eslint-disable import/no-dynamic-require */
 // Override the suspense module to be our own
 // This is expected to break when using preact
@@ -2051,7 +2055,7 @@ var _Suspense = _interopRequireDefault(__webpack_require__(39));
 React.Suspense = _Suspense["default"];
 React["default"].Suspense = _Suspense["default"];
 
-var App = __webpack_require__(42)["default"];
+var App = __webpack_require__(43)["default"];
 
 var _default = function _default(staticInfo) {
   return function (props) {
@@ -2064,13 +2068,13 @@ var _default = function _default(staticInfo) {
 exports["default"] = _default;
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports) {
 
 module.exports = require("/Users/davidfreeman/Developer/choraliers-site/node_modules/react-static/lib/browser/hooks/useStaticInfo");
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2085,9 +2089,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _extends2 = _interopRequireDefault(__webpack_require__(40));
+var _extends2 = _interopRequireDefault(__webpack_require__(41));
 
-var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(41));
+var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(42));
 
 var React = _interopRequireWildcard(__webpack_require__(0));
 
@@ -2108,19 +2112,19 @@ var _default = Suspense;
 exports["default"] = _default;
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/extends");
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/objectWithoutProperties");
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2159,10 +2163,10 @@ if (typeof document !== 'undefined') {
     });
   }
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(43)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(44)(module)))
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports) {
 
 module.exports = function (originalModule) {
