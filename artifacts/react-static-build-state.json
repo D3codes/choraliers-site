@@ -15,22 +15,22 @@
   "silent": false,
   "entry": "index.js",
   "paths": {
-    "ROOT": "C:\\Users\\David\\Desktop\\choraliers-site",
-    "SRC": "C:\\Users\\David\\Desktop\\choraliers-site\\src",
-    "DIST": "C:\\Users\\David\\Desktop\\choraliers-site\\dist",
-    "ASSETS": "C:\\Users\\David\\Desktop\\choraliers-site\\dist",
-    "PLUGINS": "C:\\Users\\David\\Desktop\\choraliers-site\\plugins",
-    "TEMP": "C:\\Users\\David\\Desktop\\choraliers-site\\tmp",
-    "ARTIFACTS": "C:\\Users\\David\\Desktop\\choraliers-site\\artifacts",
-    "PUBLIC": "C:\\Users\\David\\Desktop\\choraliers-site\\public",
-    "NODE_MODULES": "C:\\Users\\David\\Desktop\\choraliers-site\\node_modules",
-    "EXCLUDE_MODULES": "C:\\Users\\David\\Desktop\\choraliers-site\\node_modules",
-    "PACKAGE": "C:\\Users\\David\\Desktop\\choraliers-site\\package.json",
-    "HTML_TEMPLATE": "C:\\Users\\David\\Desktop\\choraliers-site\\dist\\index.html",
-    "STATIC_DATA": "C:\\Users\\David\\Desktop\\choraliers-site\\dist\\staticData"
+    "ROOT": "/Users/davidfreeman/Developer/choraliers-site",
+    "SRC": "/Users/davidfreeman/Developer/choraliers-site/src",
+    "DIST": "/Users/davidfreeman/Developer/choraliers-site/dist",
+    "ASSETS": "/Users/davidfreeman/Developer/choraliers-site/dist",
+    "PLUGINS": "/Users/davidfreeman/Developer/choraliers-site/plugins",
+    "TEMP": "/Users/davidfreeman/Developer/choraliers-site/tmp",
+    "ARTIFACTS": "/Users/davidfreeman/Developer/choraliers-site/artifacts",
+    "PUBLIC": "/Users/davidfreeman/Developer/choraliers-site/public",
+    "NODE_MODULES": "/Users/davidfreeman/Developer/choraliers-site/node_modules",
+    "EXCLUDE_MODULES": "/Users/davidfreeman/Developer/choraliers-site/node_modules",
+    "PACKAGE": "/Users/davidfreeman/Developer/choraliers-site/package.json",
+    "HTML_TEMPLATE": "/Users/davidfreeman/Developer/choraliers-site/dist/index.html",
+    "STATIC_DATA": "/Users/davidfreeman/Developer/choraliers-site/dist/staticData"
   },
   "plugins": [
-    "C:\\Users\\David\\Desktop\\choraliers-site"
+    "/Users/davidfreeman/Developer/choraliers-site"
   ],
   "siteRoot": "/",
   "basePath": "",

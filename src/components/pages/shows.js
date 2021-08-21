@@ -1,6 +1,5 @@
 import React from 'react'
-import { Typography, makeStyles } from '@material-ui/core'
-import bt from '../../images/boomtown1.jpg';
+import { Typography, makeStyles, Divider } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -8,13 +7,6 @@ const useStyles = makeStyles((theme) => ({
   },
   container: {
     textAlign: 'center'
-  },
-  btContainer: {
-    textAlign: 'center'
-  },
-  btImg: {
-    width: '90%',
-    maxWidth: '600px'
   },
   infoContainer: {
     textAlign: 'center'
@@ -26,32 +18,40 @@ const Shows = () => {
 
     return (
       <div className={classes.root}>
-        <div className={classes.container}>
-          <Typography>The Cody Choraliers present:</Typography>
-          <Typography variant="h4">2021</Typography>
-          <Typography variant="h4">The Comeback Show</Typography>
-          <Typography>with the Cody Choraliers chorus, chapter quartets, and featuring Central States District Champion quartet:</Typography>
-        </div>
-        <div className={classes.btContainer}>
-          <Typography variant="h4">BoomTown</Typography>
-          <img className={classes.btImg} src={bt} alt="BoomTown Quartet" />
-        </div>
-        <div className={classes.infoContainer}>
-          <div>
-            <Typography variant="h6">When</Typography>
-            <Typography>August 13 at 7:00 pm</Typography>
+        <div>
+          <Typography variant="h4">Upcoming Appearances</Typography>
+          <br />
+          <div className={classes.infoContainer}>
+            <Typography variant="h4">Singing at Worship</Typography>
+            <div>
+              <Typography variant="h6">When</Typography>
+              <Typography>August 29 at 10:30 am</Typography>
+            </div>
+            <div>
+              <Typography variant="h6">Where</Typography>
+              <Typography>The First Presbyterian Church</Typography>
+              <Typography>407 Walnut St. Leavenworth, KS</Typography>
+            </div>
           </div>
-          <div>
-            <Typography variant="h6">Where</Typography>
-            <Typography>The Heritage Center</Typography>
-            <Typography>109 Delaware Leavenworth, KS</Typography>
+          <br />
+          <Divider />
+          <br />
+          <div className={classes.infoContainer}>
+            <Typography variant="h4">Holiday Dinner Show</Typography>
+            <div>
+              <Typography variant="h6">When</Typography>
+              <Typography>December 10</Typography>
+            </div>
+            <div>
+              <Typography variant="h6">Where</Typography>
+              <Typography>The Heritage Center</Typography>
+              <Typography>109 Delaware Leavenworth, KS</Typography>
+            </div>
           </div>
-          <div>
-            <Typography variant="h6">Tickets</Typography>
-            <Typography>At the Heritage Center 913-682-2122</Typography>
-            <Typography>or call 913-651-SING (7464)</Typography>
-            <Typography>Adults: $15 | Children: $8</Typography>
-          </div>
+          <br />
+          <Divider />
+          <br />
+          <Typography>Check back later for more info!</Typography>
         </div>
       </div>
     )

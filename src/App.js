@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react'
+import React, { useState } from 'react'
 import { makeStyles, Snackbar, SnackbarContent, Slide, Button } from '@material-ui/core'
 import Navbar from './components/navbar';
 import Home from './components/pages/home';
@@ -28,7 +28,6 @@ const Site = () => {
     const classes = useStyles()
 
     const [page, setPage] = useState(0);
-    const [showSnackbar, setShowSnackbar] = useState(true);
 
     return (
       <div className={classes.root}>
@@ -40,18 +39,18 @@ const Site = () => {
         {page === PAGES.MEDIA && <Media />}
         <Snackbar
           anchorOrigin={{vertical: 'bottom', horizontal: 'center'}}
-          open={showSnackbar && page !== PAGES.SHOWS}
+          open={page !== PAGES.JOIN_US}
           onClose={() => {}}
           TransitionComponent={Slide}
         >
           <SnackbarContent
             classes={{root: classes.snackbar}}
-            message="The Comeback Show - Aug 13"
+            message="Sing With Us!"
             action={
               <Button
                 variant="contained"
                 size="small"
-                onClick={() => {setShowSnackbar(false); setPage(PAGES.SHOWS);}}
+                onClick={() => {setPage(PAGES.JOIN_US);}}
               >
                 Info
               </Button>
