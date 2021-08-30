@@ -35,7 +35,7 @@ const Shows = () => {
                 <div>
                   <Typography variant="h6">Where</Typography>
                   <Typography>{show.where.location}</Typography>
-                  <Typography>{show.where.address}</Typography>
+                  {show.where.address && <Typography>{show.where.address}</Typography>}
                 </div>
               </div>
               <Divider />

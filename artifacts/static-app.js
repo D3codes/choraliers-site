@@ -974,14 +974,14 @@ var joinUs_JoinUs = function JoinUs() {
     src: "https://maps.google.com/maps?q=407%20Walnut%20St%20Leavenworth,%20KS%2066048&t=&z=15&ie=UTF8&iwloc=&output=embed",
     frameborder: "0",
     scrolling: "no",
-    marginheight: "0",
-    marginwidth: "0"
+    marginHeight: "0",
+    marginWidth: "0"
   })), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, "Call 913-651-SING (7464) with questions or to get directions to our rehearsal venue.")));
 };
 
 /* harmony default export */ var joinUs = (joinUs_JoinUs);
-// EXTERNAL MODULE: /Users/davidfreeman/Developer/choraliers-site/src/data/shows.json
-var shows = __webpack_require__(27);
+// EXTERNAL MODULE: /Users/davidfreeman/Developer/choraliers-site/src/data/showData.json
+var showData = __webpack_require__(27);
 
 // CONCATENATED MODULE: /Users/davidfreeman/Developer/choraliers-site/src/components/pages/shows.js
 
@@ -990,13 +990,16 @@ var shows = __webpack_require__(27);
 var shows_useStyles = Object(core_["makeStyles"])(function (theme) {
   return {
     root: {
-      margin: theme.spacing()
+      margin: theme.spacing(),
+      paddingBottom: theme.spacing(10)
     },
     container: {
       textAlign: 'center'
     },
     infoContainer: {
-      textAlign: 'center'
+      textAlign: 'center',
+      marginTop: theme.spacing(2),
+      marginBottom: theme.spacing(2)
     }
   };
 });
@@ -1007,7 +1010,7 @@ var shows_Shows = function Shows() {
     className: classes.root
   }, /*#__PURE__*/external_react_default.a.createElement("div", null, /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
     variant: "h4"
-  }, "Upcoming Appearances"), /*#__PURE__*/external_react_default.a.createElement("br", null), shows["a" /* shows */].map(function (show) {
+  }, "Upcoming Appearances"), showData["a" /* shows */].map(function (show) {
     return /*#__PURE__*/external_react_default.a.createElement(external_react_default.a.Fragment, null, /*#__PURE__*/external_react_default.a.createElement("div", {
       className: classes.infoContainer
     }, /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
@@ -1016,11 +1019,11 @@ var shows_Shows = function Shows() {
       variant: "h6"
     }, "When"), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, show.when)), /*#__PURE__*/external_react_default.a.createElement("div", null, /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
       variant: "h6"
-    }, "Where"), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, show.where.location), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, show.where.address))), /*#__PURE__*/external_react_default.a.createElement("br", null), /*#__PURE__*/external_react_default.a.createElement(core_["Divider"], null), /*#__PURE__*/external_react_default.a.createElement("br", null));
+    }, "Where"), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, show.where.location), show.where.address && /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, show.where.address))), /*#__PURE__*/external_react_default.a.createElement(core_["Divider"], null));
   }), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, "Check back later for more info!")));
 };
 
-/* harmony default export */ var pages_shows = (shows_Shows);
+/* harmony default export */ var shows = (shows_Shows);
 // CONCATENATED MODULE: /Users/davidfreeman/Developer/choraliers-site/src/components/pages/media.js
 
 
@@ -1121,7 +1124,7 @@ var App_Site = function Site() {
     className: classes.root
   }, /*#__PURE__*/external_react_default.a.createElement(Navbar, {
     onTabSelect: setPage
-  }), page === PAGES.HOME && /*#__PURE__*/external_react_default.a.createElement(home, null), page === PAGES.ABOUT && /*#__PURE__*/external_react_default.a.createElement(about, null), page === PAGES.JOIN_US && /*#__PURE__*/external_react_default.a.createElement(joinUs, null), page === PAGES.SHOWS && /*#__PURE__*/external_react_default.a.createElement(pages_shows, null), page === PAGES.MEDIA && /*#__PURE__*/external_react_default.a.createElement(media, null), /*#__PURE__*/external_react_default.a.createElement(core_["Snackbar"], {
+  }), page === PAGES.HOME && /*#__PURE__*/external_react_default.a.createElement(home, null), page === PAGES.ABOUT && /*#__PURE__*/external_react_default.a.createElement(about, null), page === PAGES.JOIN_US && /*#__PURE__*/external_react_default.a.createElement(joinUs, null), page === PAGES.SHOWS && /*#__PURE__*/external_react_default.a.createElement(shows, null), page === PAGES.MEDIA && /*#__PURE__*/external_react_default.a.createElement(media, null), /*#__PURE__*/external_react_default.a.createElement(core_["Snackbar"], {
     anchorOrigin: {
       vertical: 'bottom',
       horizontal: 'center'
@@ -1415,49 +1418,49 @@ module.exports = require("@material-ui/icons/Menu");
 /* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/choralierslogo.093d949d.png";
+module.exports = __webpack_require__.p + "static/choralierslogo.91a40e37.png";
 
 /***/ }),
 /* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/logotext.62d0c031.png";
+module.exports = __webpack_require__.p + "static/logotext.a6978225.png";
 
 /***/ }),
 /* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/choraliers1.e804f2a4.jpg";
+module.exports = __webpack_require__.p + "static/choraliers1.12347ef9.jpg";
 
 /***/ }),
 /* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/bhs.a731ab11.png";
+module.exports = __webpack_require__.p + "static/bhs.4266bdbc.png";
 
 /***/ }),
 /* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/jerry.440ff126.png";
+module.exports = __webpack_require__.p + "static/jerry.7b8121af.png";
 
 /***/ }),
 /* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/choraliers4.0fdf72c9.png";
+module.exports = __webpack_require__.p + "static/choraliers4.9010839d.png";
 
 /***/ }),
 /* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/choraliers2.e35fd894.jpg";
+module.exports = __webpack_require__.p + "static/choraliers2.9ba60004.jpg";
 
 /***/ }),
 /* 27 */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"a\":[{\"title\":\"Singing at Worship\",\"when\":\"August 29 at 10:30 am\",\"where\":{\"location\":\"The First Presbyterian Church\",\"address\":\"407 Walnut St. Leavenworth, KS\"}},{\"title\":\"Holiday Dinner Show\",\"when\":\"December 10\",\"where\":{\"location\":\"The Heritage Center\",\"address\":\"109 Delaware Leavenworth, KS\"}}]}");
+module.exports = JSON.parse("{\"a\":[{\"title\":\"Holiday Dinner Show\",\"when\":\"December 10\",\"where\":{\"location\":\"The Heritage Center\",\"address\":\"109 Delaware Leavenworth, KS\"}},{\"title\":\"Holiday Show\",\"when\":\"December 12\",\"where\":{\"location\":\"St. Joseph, MO\"}}]}");
 
 /***/ }),
 /* 28 */

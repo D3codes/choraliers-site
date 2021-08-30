@@ -54,8 +54,8 @@ const JoinUs = () => {
               src="https://maps.google.com/maps?q=407%20Walnut%20St%20Leavenworth,%20KS%2066048&t=&z=15&ie=UTF8&iwloc=&output=embed"
               frameborder="0"
               scrolling="no"
-              marginheight="0"
-              marginwidth="0"
+              marginHeight="0"
+              marginWidth="0"
             />
           </div>
           <Typography>Call 913-651-SING (7464) with questions or to get directions to our rehearsal venue.</Typography>
