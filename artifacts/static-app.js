@@ -104,7 +104,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 28);
+/******/ 	return __webpack_require__(__webpack_require__.s = 29);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -134,7 +134,7 @@ var _utils = __webpack_require__(7);
 
 var requireById = function requireById(id) {
   if (!(0, _utils.isWebpack)() && typeof id === 'string') {
-    return __webpack_require__(35)("" + id);
+    return __webpack_require__(36)("" + id);
   }
 
   return __webpack_require__('' + id);
@@ -188,7 +188,7 @@ var _createClass = function () {
   };
 }();
 
-var _requireUniversalModule = __webpack_require__(34);
+var _requireUniversalModule = __webpack_require__(35);
 
 Object.defineProperty(exports, 'CHUNK_NAMES', {
   enumerable: true,
@@ -203,7 +203,7 @@ Object.defineProperty(exports, 'MODULE_IDS', {
   }
 });
 
-var _reportChunks = __webpack_require__(36);
+var _reportChunks = __webpack_require__(37);
 
 Object.defineProperty(exports, 'ReportChunks', {
   enumerable: true,
@@ -233,7 +233,7 @@ var _context2 = _interopRequireDefault(_context);
 
 var _utils = __webpack_require__(7);
 
-var _helpers = __webpack_require__(37);
+var _helpers = __webpack_require__(38);
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
@@ -617,7 +617,7 @@ function universal(asyncModule) {
     return UniversalComponent;
   }(_react2["default"].Component), _class.contextType = _context2["default"], _temp;
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(33)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(34)(module)))
 
 /***/ }),
 /* 4 */
@@ -980,10 +980,16 @@ var joinUs_JoinUs = function JoinUs() {
 };
 
 /* harmony default export */ var joinUs = (joinUs_JoinUs);
-// EXTERNAL MODULE: /Users/davidfreeman/Developer/choraliers-site/src/data/showData.json
-var showData = __webpack_require__(27);
+// EXTERNAL MODULE: /Users/davidfreeman/Developer/choraliers-site/src/images/xmastree.png
+var xmastree = __webpack_require__(27);
+var xmastree_default = /*#__PURE__*/__webpack_require__.n(xmastree);
+
+// EXTERNAL MODULE: /Users/davidfreeman/Developer/choraliers-site/src/images/riversong.png
+var riversong = __webpack_require__(28);
+var riversong_default = /*#__PURE__*/__webpack_require__.n(riversong);
 
 // CONCATENATED MODULE: /Users/davidfreeman/Developer/choraliers-site/src/components/pages/shows.js
+
 
 
 
@@ -1000,6 +1006,18 @@ var shows_useStyles = Object(core_["makeStyles"])(function (theme) {
       textAlign: 'center',
       marginTop: theme.spacing(2),
       marginBottom: theme.spacing(2)
+    },
+    image: {
+      width: '90%',
+      marginTop: theme.spacing(),
+      marginBottom: theme.spacing(),
+      maxWidth: '700px'
+    },
+    imageNarrow: {
+      width: '90%',
+      marginTop: theme.spacing(),
+      marginBottom: theme.spacing(),
+      maxWidth: '200px'
     }
   };
 });
@@ -1010,17 +1028,37 @@ var shows_Shows = function Shows() {
     className: classes.root
   }, /*#__PURE__*/external_react_default.a.createElement("div", null, /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
     variant: "h4"
-  }, "Upcoming Appearances"), showData["a" /* shows */].map(function (show) {
-    return /*#__PURE__*/external_react_default.a.createElement(external_react_default.a.Fragment, null, /*#__PURE__*/external_react_default.a.createElement("div", {
-      className: classes.infoContainer
-    }, /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
-      variant: "h4"
-    }, show.title), /*#__PURE__*/external_react_default.a.createElement("div", null, /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
-      variant: "h6"
-    }, "When"), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, show.when)), /*#__PURE__*/external_react_default.a.createElement("div", null, /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
-      variant: "h6"
-    }, "Where"), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, show.where.location), show.where.address && /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, show.where.address))), /*#__PURE__*/external_react_default.a.createElement(core_["Divider"], null));
-  }), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, "Check back later for more info!")));
+  }, "Upcoming Appearances"), /*#__PURE__*/external_react_default.a.createElement("div", {
+    className: classes.infoContainer
+  }, /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
+    variant: "h4"
+  }, "The Cody Choraliers Present:"), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
+    variant: "h4"
+  }, "2021 Holiday Dinner and Show"), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
+    variant: "h5"
+  }, "with the St. Joseph RiverSong Chorus"), /*#__PURE__*/external_react_default.a.createElement("img", {
+    src: xmastree_default.a,
+    alt: "Christmas Tree",
+    className: classes.imageNarrow
+  }), /*#__PURE__*/external_react_default.a.createElement("div", null, /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
+    variant: "h6"
+  }, "When"), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, "December 10 @ 6:30pm")), /*#__PURE__*/external_react_default.a.createElement("div", null, /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
+    variant: "h6"
+  }, "Where"), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, "The Heritage Center"), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, "109 Delaware, Leavenworth, KS")), /*#__PURE__*/external_react_default.a.createElement("div", null, /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
+    variant: "h6"
+  }, "Tickets"), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, "Adults $20 | Children $10"), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, "Call 913-682-2122 or 913-651-7464"))), /*#__PURE__*/external_react_default.a.createElement(core_["Divider"], null), /*#__PURE__*/external_react_default.a.createElement("div", {
+    className: classes.infoContainer
+  }, /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
+    variant: "h4"
+  }, "RiverSong Chorus Holiday Show"), /*#__PURE__*/external_react_default.a.createElement("img", {
+    src: riversong_default.a,
+    alt: "The RiverSong Chorus",
+    className: classes.image
+  }), /*#__PURE__*/external_react_default.a.createElement("div", null, /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
+    variant: "h6"
+  }, "When"), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, "December 12 @ 4:30pm")), /*#__PURE__*/external_react_default.a.createElement("div", null, /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
+    variant: "h6"
+  }, "Where"), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, "Wyatt Park Christian Church"), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, "2623 Mitchell Ave, St. Joseph, MO"))), /*#__PURE__*/external_react_default.a.createElement(core_["Divider"], null), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, "Check back later for more info!")));
 };
 
 /* harmony default export */ var shows = (shows_Shows);
@@ -1129,19 +1167,19 @@ var App_Site = function Site() {
       vertical: 'bottom',
       horizontal: 'center'
     },
-    open: page !== PAGES.JOIN_US,
+    open: page !== PAGES.SHOWS,
     onClose: function onClose() {},
     TransitionComponent: core_["Slide"]
   }, /*#__PURE__*/external_react_default.a.createElement(core_["SnackbarContent"], {
     classes: {
       root: classes.snackbar
     },
-    message: "Sing With Us!",
+    message: "Holiday Dinner Show!",
     action: /*#__PURE__*/external_react_default.a.createElement(core_["Button"], {
       variant: "contained",
       size: "small",
       onClick: function onClick() {
-        setPage(PAGES.JOIN_US);
+        setPage(PAGES.SHOWS);
       }
     }, "Info")
   })));
@@ -1458,28 +1496,34 @@ module.exports = __webpack_require__.p + "static/choraliers2.9ba60004.jpg";
 
 /***/ }),
 /* 27 */
-/***/ (function(module) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = JSON.parse("{\"a\":[{\"title\":\"Holiday Dinner Show with The RiverSong Chorus\",\"when\":\"December 10 @ 6:30pm\",\"where\":{\"location\":\"The Heritage Center\",\"address\":\"109 Delaware, Leavenworth, KS\"}},{\"title\":\"RiverSong Chorus Holiday Show\",\"when\":\"December 12 @ 4:30pm\",\"where\":{\"location\":\"Wyatt Park Christian Church\",\"address\":\"2623 Mitchell Ave, St. Joseph, MO\"}}]}");
+module.exports = __webpack_require__.p + "static/xmastree.4f8b4343.png";
 
 /***/ }),
 /* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(29);
-__webpack_require__(31);
-module.exports = __webpack_require__(38);
-
+module.exports = __webpack_require__.p + "static/riversong.80601b3b.png";
 
 /***/ }),
 /* 29 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(30);
+__webpack_require__(32);
+module.exports = __webpack_require__(39);
+
+
+/***/ }),
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 /* eslint-disable import/no-dynamic-require */
 
-var plugins = __webpack_require__(30)["default"];
+var plugins = __webpack_require__(31)["default"];
 
 var _require = __webpack_require__(9),
     registerPlugins = _require.registerPlugins;
@@ -1489,7 +1533,7 @@ registerPlugins(plugins);
 if (false) {}
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1505,7 +1549,7 @@ var plugins = [{
 /* harmony default export */ __webpack_exports__["default"] = (plugins);
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1515,7 +1559,7 @@ var plugins = [{
 var _require = __webpack_require__(9),
     registerTemplates = _require.registerTemplates;
 
-var _require2 = __webpack_require__(32),
+var _require2 = __webpack_require__(33),
     templates = _require2["default"],
     notFoundTemplate = _require2.notFoundTemplate;
 
@@ -1524,7 +1568,7 @@ registerTemplates(templates, notFoundTemplate);
 if (false) {}
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1580,7 +1624,7 @@ var notFoundTemplate = "__react_static_root__/node_modules/react-static/lib/brow
 /* WEBPACK VAR INJECTION */}.call(this, "/"))
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, exports) {
 
 module.exports = function (module) {
@@ -1609,7 +1653,7 @@ module.exports = function (module) {
 };
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1820,7 +1864,7 @@ var getConfig = function getConfig(isDynamic, universalConfig, options, props) {
 };
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -1848,10 +1892,10 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 35;
+webpackContext.id = 36;
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1961,7 +2005,7 @@ ReportChunks.propTypes = {
 exports["default"] = ReportChunks;
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2028,7 +2072,7 @@ var __handleAfter = exports.__handleAfter = function __handleAfter(props, state,
 };
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2045,9 +2089,9 @@ exports["default"] = void 0;
 
 var React = _interopRequireWildcard(__webpack_require__(0));
 
-var _useStaticInfo = __webpack_require__(39);
+var _useStaticInfo = __webpack_require__(40);
 
-var _Suspense = _interopRequireDefault(__webpack_require__(40));
+var _Suspense = _interopRequireDefault(__webpack_require__(41));
 /* eslint-disable import/no-dynamic-require */
 // Override the suspense module to be our own
 // This is expected to break when using preact
@@ -2058,7 +2102,7 @@ var _Suspense = _interopRequireDefault(__webpack_require__(40));
 React.Suspense = _Suspense["default"];
 React["default"].Suspense = _Suspense["default"];
 
-var App = __webpack_require__(43)["default"];
+var App = __webpack_require__(44)["default"];
 
 var _default = function _default(staticInfo) {
   return function (props) {
@@ -2071,13 +2115,13 @@ var _default = function _default(staticInfo) {
 exports["default"] = _default;
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports) {
 
 module.exports = require("/Users/davidfreeman/Developer/choraliers-site/node_modules/react-static/lib/browser/hooks/useStaticInfo");
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2092,9 +2136,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _extends2 = _interopRequireDefault(__webpack_require__(41));
+var _extends2 = _interopRequireDefault(__webpack_require__(42));
 
-var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(42));
+var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(43));
 
 var React = _interopRequireWildcard(__webpack_require__(0));
 
@@ -2115,19 +2159,19 @@ var _default = Suspense;
 exports["default"] = _default;
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/extends");
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/objectWithoutProperties");
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2166,10 +2210,10 @@ if (typeof document !== 'undefined') {
     });
   }
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(44)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(45)(module)))
 
 /***/ }),
-/* 44 */
+/* 45 */
 /***/ (function(module, exports) {
 
 module.exports = function (originalModule) {

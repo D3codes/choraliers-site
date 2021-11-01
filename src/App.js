@@ -39,18 +39,18 @@ const Site = () => {
         {page === PAGES.MEDIA && <Media />}
         <Snackbar
           anchorOrigin={{vertical: 'bottom', horizontal: 'center'}}
-          open={page !== PAGES.JOIN_US}
+          open={page !== PAGES.SHOWS}
           onClose={() => {}}
           TransitionComponent={Slide}
         >
           <SnackbarContent
             classes={{root: classes.snackbar}}
-            message="Sing With Us!"
+            message="Holiday Dinner Show!"
             action={
               <Button
                 variant="contained"
                 size="small"
-                onClick={() => {setPage(PAGES.JOIN_US);}}
+                onClick={() => {setPage(PAGES.SHOWS);}}
               >
                 Info
               </Button>
