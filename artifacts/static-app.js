@@ -104,7 +104,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 29);
+/******/ 	return __webpack_require__(__webpack_require__.s = 27);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -134,7 +134,7 @@ var _utils = __webpack_require__(7);
 
 var requireById = function requireById(id) {
   if (!(0, _utils.isWebpack)() && typeof id === 'string') {
-    return __webpack_require__(36)("" + id);
+    return __webpack_require__(34)("" + id);
   }
 
   return __webpack_require__('' + id);
@@ -188,7 +188,7 @@ var _createClass = function () {
   };
 }();
 
-var _requireUniversalModule = __webpack_require__(35);
+var _requireUniversalModule = __webpack_require__(33);
 
 Object.defineProperty(exports, 'CHUNK_NAMES', {
   enumerable: true,
@@ -203,7 +203,7 @@ Object.defineProperty(exports, 'MODULE_IDS', {
   }
 });
 
-var _reportChunks = __webpack_require__(37);
+var _reportChunks = __webpack_require__(35);
 
 Object.defineProperty(exports, 'ReportChunks', {
   enumerable: true,
@@ -233,7 +233,7 @@ var _context2 = _interopRequireDefault(_context);
 
 var _utils = __webpack_require__(7);
 
-var _helpers = __webpack_require__(38);
+var _helpers = __webpack_require__(36);
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
@@ -617,7 +617,7 @@ function universal(asyncModule) {
     return UniversalComponent;
   }(_react2["default"].Component), _class.contextType = _context2["default"], _temp;
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(34)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(32)(module)))
 
 /***/ }),
 /* 4 */
@@ -893,7 +893,7 @@ var about_About = function About() {
     className: classes.chorus,
     src: choraliers4_default.a,
     alt: "The Cody Choraliers"
-  }), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, "The Leavenworth chapter of the Barbershop Harmony Society is to be an ever growing body of sociable, fun-loving, acapella barbershop style singers who promote and encourage vocal music through social activities, contests, performances (both public & private), and educational opportunities within our local schools.")), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
+  }), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, "The Cody Choraliers have entertained audiences in the Leavenworth area for over 50 years. Chartered in 1969, they enjoy singing and performing four-part harmony. The chorus competed and won the Central States District Small Chorus Championships in 2011 and again in 2018. Chapter quartets entertain tour groups visiting historic Leavenworth, serenade senior citizens, and deliver Singing Valentines.")), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
     variant: "h4"
   }, "Our Director"), /*#__PURE__*/external_react_default.a.createElement("div", {
     className: classes.director
@@ -981,12 +981,10 @@ var joinUs_JoinUs = function JoinUs() {
 
 /* harmony default export */ var joinUs = (joinUs_JoinUs);
 // EXTERNAL MODULE: /Users/davidfreeman/Developer/choraliers-site/src/images/xmastree.png
-var xmastree = __webpack_require__(27);
-var xmastree_default = /*#__PURE__*/__webpack_require__.n(xmastree);
+var xmastree = __webpack_require__(44);
 
 // EXTERNAL MODULE: /Users/davidfreeman/Developer/choraliers-site/src/images/riversong.png
-var riversong = __webpack_require__(28);
-var riversong_default = /*#__PURE__*/__webpack_require__.n(riversong);
+var riversong = __webpack_require__(45);
 
 // CONCATENATED MODULE: /Users/davidfreeman/Developer/choraliers-site/src/components/pages/shows.js
 
@@ -1030,35 +1028,7 @@ var shows_Shows = function Shows() {
     variant: "h4"
   }, "Upcoming Appearances"), /*#__PURE__*/external_react_default.a.createElement("div", {
     className: classes.infoContainer
-  }, /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
-    variant: "h4"
-  }, "The Cody Choraliers Present:"), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
-    variant: "h4"
-  }, "2021 Holiday Dinner and Show"), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
-    variant: "h5"
-  }, "with the St. Joseph RiverSong Chorus"), /*#__PURE__*/external_react_default.a.createElement("img", {
-    src: xmastree_default.a,
-    alt: "Christmas Tree",
-    className: classes.imageNarrow
-  }), /*#__PURE__*/external_react_default.a.createElement("div", null, /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
-    variant: "h6"
-  }, "When"), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, "December 10 @ 6:30pm")), /*#__PURE__*/external_react_default.a.createElement("div", null, /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
-    variant: "h6"
-  }, "Where"), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, "The Heritage Center"), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, "109 Delaware, Leavenworth, KS")), /*#__PURE__*/external_react_default.a.createElement("div", null, /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
-    variant: "h6"
-  }, "Tickets"), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, "Adults $20 | Children $10"), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, "Call 913-682-2122 or 913-651-7464"))), /*#__PURE__*/external_react_default.a.createElement(core_["Divider"], null), /*#__PURE__*/external_react_default.a.createElement("div", {
-    className: classes.infoContainer
-  }, /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
-    variant: "h4"
-  }, "RiverSong Chorus Holiday Show"), /*#__PURE__*/external_react_default.a.createElement("img", {
-    src: riversong_default.a,
-    alt: "The RiverSong Chorus",
-    className: classes.image
-  }), /*#__PURE__*/external_react_default.a.createElement("div", null, /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
-    variant: "h6"
-  }, "When"), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, "December 12 @ 4:30pm")), /*#__PURE__*/external_react_default.a.createElement("div", null, /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], {
-    variant: "h6"
-  }, "Where"), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, "Wyatt Park Christian Church"), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, "2623 Mitchell Ave, St. Joseph, MO"))), /*#__PURE__*/external_react_default.a.createElement(core_["Divider"], null), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, "Check back later for more info!")));
+  }), /*#__PURE__*/external_react_default.a.createElement(core_["Divider"], null), /*#__PURE__*/external_react_default.a.createElement(core_["Typography"], null, "Check back later for more info!")));
 };
 
 /* harmony default export */ var shows = (shows_Shows);
@@ -1167,19 +1137,19 @@ var App_Site = function Site() {
       vertical: 'bottom',
       horizontal: 'center'
     },
-    open: page !== PAGES.SHOWS,
+    open: page !== PAGES.JOIN_US,
     onClose: function onClose() {},
     TransitionComponent: core_["Slide"]
   }, /*#__PURE__*/external_react_default.a.createElement(core_["SnackbarContent"], {
     classes: {
       root: classes.snackbar
     },
-    message: "Holiday Dinner Show!",
+    message: "Sing With Us!",
     action: /*#__PURE__*/external_react_default.a.createElement(core_["Button"], {
       variant: "contained",
       size: "small",
       onClick: function onClick() {
-        setPage(PAGES.SHOWS);
+        setPage(PAGES.JOIN_US);
       }
     }, "Info")
   })));
@@ -1498,32 +1468,20 @@ module.exports = __webpack_require__.p + "static/choraliers2.9ba60004.jpg";
 /* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/xmastree.4f8b4343.png";
+__webpack_require__(28);
+__webpack_require__(30);
+module.exports = __webpack_require__(37);
+
 
 /***/ }),
 /* 28 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/riversong.80601b3b.png";
-
-/***/ }),
-/* 29 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(30);
-__webpack_require__(32);
-module.exports = __webpack_require__(39);
-
-
-/***/ }),
-/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 /* eslint-disable import/no-dynamic-require */
 
-var plugins = __webpack_require__(31)["default"];
+var plugins = __webpack_require__(29)["default"];
 
 var _require = __webpack_require__(9),
     registerPlugins = _require.registerPlugins;
@@ -1533,7 +1491,7 @@ registerPlugins(plugins);
 if (false) {}
 
 /***/ }),
-/* 31 */
+/* 29 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1549,7 +1507,7 @@ var plugins = [{
 /* harmony default export */ __webpack_exports__["default"] = (plugins);
 
 /***/ }),
-/* 32 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1559,7 +1517,7 @@ var plugins = [{
 var _require = __webpack_require__(9),
     registerTemplates = _require.registerTemplates;
 
-var _require2 = __webpack_require__(33),
+var _require2 = __webpack_require__(31),
     templates = _require2["default"],
     notFoundTemplate = _require2.notFoundTemplate;
 
@@ -1568,7 +1526,7 @@ registerTemplates(templates, notFoundTemplate);
 if (false) {}
 
 /***/ }),
-/* 33 */
+/* 31 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1624,7 +1582,7 @@ var notFoundTemplate = "__react_static_root__/node_modules/react-static/lib/brow
 /* WEBPACK VAR INJECTION */}.call(this, "/"))
 
 /***/ }),
-/* 34 */
+/* 32 */
 /***/ (function(module, exports) {
 
 module.exports = function (module) {
@@ -1653,7 +1611,7 @@ module.exports = function (module) {
 };
 
 /***/ }),
-/* 35 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1864,7 +1822,7 @@ var getConfig = function getConfig(isDynamic, universalConfig, options, props) {
 };
 
 /***/ }),
-/* 36 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -1892,10 +1850,10 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 36;
+webpackContext.id = 34;
 
 /***/ }),
-/* 37 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2005,7 +1963,7 @@ ReportChunks.propTypes = {
 exports["default"] = ReportChunks;
 
 /***/ }),
-/* 38 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2072,7 +2030,7 @@ var __handleAfter = exports.__handleAfter = function __handleAfter(props, state,
 };
 
 /***/ }),
-/* 39 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2089,9 +2047,9 @@ exports["default"] = void 0;
 
 var React = _interopRequireWildcard(__webpack_require__(0));
 
-var _useStaticInfo = __webpack_require__(40);
+var _useStaticInfo = __webpack_require__(38);
 
-var _Suspense = _interopRequireDefault(__webpack_require__(41));
+var _Suspense = _interopRequireDefault(__webpack_require__(39));
 /* eslint-disable import/no-dynamic-require */
 // Override the suspense module to be our own
 // This is expected to break when using preact
@@ -2102,7 +2060,7 @@ var _Suspense = _interopRequireDefault(__webpack_require__(41));
 React.Suspense = _Suspense["default"];
 React["default"].Suspense = _Suspense["default"];
 
-var App = __webpack_require__(44)["default"];
+var App = __webpack_require__(42)["default"];
 
 var _default = function _default(staticInfo) {
   return function (props) {
@@ -2115,13 +2073,13 @@ var _default = function _default(staticInfo) {
 exports["default"] = _default;
 
 /***/ }),
-/* 40 */
+/* 38 */
 /***/ (function(module, exports) {
 
 module.exports = require("/Users/davidfreeman/Developer/choraliers-site/node_modules/react-static/lib/browser/hooks/useStaticInfo");
 
 /***/ }),
-/* 41 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2136,9 +2094,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _extends2 = _interopRequireDefault(__webpack_require__(42));
+var _extends2 = _interopRequireDefault(__webpack_require__(40));
 
-var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(43));
+var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(41));
 
 var React = _interopRequireWildcard(__webpack_require__(0));
 
@@ -2159,19 +2117,19 @@ var _default = Suspense;
 exports["default"] = _default;
 
 /***/ }),
-/* 42 */
+/* 40 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/extends");
 
 /***/ }),
-/* 43 */
+/* 41 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/objectWithoutProperties");
 
 /***/ }),
-/* 44 */
+/* 42 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2210,10 +2168,10 @@ if (typeof document !== 'undefined') {
     });
   }
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(45)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(43)(module)))
 
 /***/ }),
-/* 45 */
+/* 43 */
 /***/ (function(module, exports) {
 
 module.exports = function (originalModule) {
@@ -2241,6 +2199,18 @@ module.exports = function (originalModule) {
 
   return module;
 };
+
+/***/ }),
+/* 44 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/xmastree.4f8b4343.png";
+
+/***/ }),
+/* 45 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/riversong.80601b3b.png";
 
 /***/ })
 /******/ ]);

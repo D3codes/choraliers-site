@@ -39,7 +39,7 @@ const About = () => {
         <div className={classes.who}>
           <Typography variant="h4">Who are the Cody Choraliers?</Typography>
           <img className={classes.chorus} src={choraliers} alt="The Cody Choraliers" />
-          <Typography>The Leavenworth chapter of the Barbershop Harmony Society is to be an ever growing body of sociable, fun-loving, acapella barbershop style singers who promote and encourage vocal music through social activities, contests, performances (both public & private), and educational opportunities within our local schools.</Typography>
+          <Typography>The Cody Choraliers have entertained audiences in the Leavenworth area for over 50 years. Chartered in 1969, they enjoy singing and performing four-part harmony. The chorus competed and won the Central States District Small Chorus Championships in 2011 and again in 2018. Chapter quartets entertain tour groups visiting historic Leavenworth, serenade senior citizens, and deliver Singing Valentines.</Typography>
         </div>
         <Typography variant="h4">Our Director</Typography>
         <div className={classes.director}>
